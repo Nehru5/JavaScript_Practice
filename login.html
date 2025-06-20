@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Login</h1>
+
+  <form action="" onsubmit="login(); return false">
+    <input type="text" id="username" required placeholder="Enter username"><br><br>
+
+    <input type="text" id="password" required placeholder="Enter Password">
+
+    <button>Login</button>
+
+  </form>
+
+  <script>
+
+    function login(){
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      let storedUsername = localStorage.getItem("name")
+      let storedPassword = localStorage.getItem("password")
+
+      if(storedUsername === username && storedPassword === password){
+        alert("Logged in")
+        window.location.href = "./home.html"
+      }else{
+        alert("invalid credentials")
+      }
+
+    }
+
+
+  </script>
+</body>
+</html>

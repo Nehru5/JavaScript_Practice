@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+
+    // Filter
+    let a = [5,6,7,8,9,10,11]
+
+    let filteredNumber = a.filter((x)=>{
+      // console.log(x)
+        return x > 8;
+    })
+
+    console.log(filteredNumber);
+
+// Map
+
+let b = [1,2,3,4]
+
+let mappedNumber = b.map((y)=>{
+    return y*10
+})
+
+console.log(mappedNumber);
+
+
+
+// reduce
+let m = [1,2,3,4,5]
+
+let total = m.reduce((acc, val)=>{
+  return acc+val
+},0)
+
+console.log(total);
+
+
+
+    
+  </script>
+</body>
+</html>

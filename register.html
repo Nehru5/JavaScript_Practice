@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <form action="" onsubmit="add();return false">
+    <input type="text" required placeholder="Enter Username" id="name"><br><br>
+
+    <input type="text" required  id="email" placeholder="Enter Email"><br><br>
+
+    <input type="text" required  placeholder="Enter Password" id="password"><br><br>
+
+    <button>Register</button>
+  </form>
+
+<script>
+
+  function add(){
+    let a = document.getElementById("name").value;
+    let b = document.getElementById("email").value;
+    let c = document.getElementById("password").value;
+
+    localStorage.setItem("name",a)
+    localStorage.setItem("email",b)
+    localStorage.setItem("password",c)
+    
+    
+  }
+
+</script>
+
+</body>
+</html>
